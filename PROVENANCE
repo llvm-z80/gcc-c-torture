@@ -1,0 +1,29 @@
+# Provenance of the mirrored content
+#
+# Everything in this repository except the files listed under "mirror-owned"
+# below is copied verbatim, without modification, from the GNU Compiler
+# Collection source tree.  Regenerate with ./sync-upstream.sh <gcc-tag>.
+
+upstream-project:  GNU Compiler Collection (GCC)
+upstream-repo:     https://github.com/gcc-mirror/gcc.git
+upstream-tag:      releases/gcc-16.2.0
+upstream-commit:   78d4ac73dd391005b895a6148cd9831e28e1208b
+upstream-subdir:   gcc/testsuite/gcc.c-torture
+extracted-on:      2026-09-02
+
+# Mirrored paths (repository root == contents of upstream-subdir)
+mirrored-paths:    ChangeLog.0 compat/ compile/ execute/ unsorted/
+mirrored-files:    3980
+mirrored-bytes:    2409055
+
+# LICENSE is GCC's top-level COPYING3 (GNU GPL v3), copied unmodified from the
+# same upstream commit and renamed so GitHub's license detection picks it up.
+license-file:      LICENSE
+
+# Files added by this mirror and not present upstream.
+mirror-owned:      .gitattributes LICENSE PROVENANCE README.md sync-upstream.sh
+
+# sha256 over the mirrored paths, computed as:
+#   find ChangeLog.0 compat compile execute unsorted -type f -print0 \
+#     | LC_ALL=C sort -z | xargs -0 sha256sum | sha256sum
+mirrored-sha256:   2783949b0e0e875e05f50ffde71afbdda385758c1396e14f00706c8c9d1523eb

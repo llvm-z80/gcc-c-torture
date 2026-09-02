@@ -1,0 +1,5 @@
+# This repository is a byte-for-byte mirror of GCC's gcc.c-torture testsuite.
+# Disable all EOL normalization and text conversion so the checked-out tree is
+# identical to upstream and `sync-upstream.sh` produces empty diffs on a no-op
+# re-sync.
+* -text
